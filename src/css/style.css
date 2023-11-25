@@ -1,0 +1,66 @@
+:root {
+--text-color: hsl(193, 38%, 86%);
+--advice-dice-color: hsl(150, 100%, 66%);
+--advice-card-color: hsl(217, 19%, 24%);
+--background-color: hsl(218, 23%, 16%);
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 800;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: var(--advice-card-color);
+    width: 430px;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.container .number-advice {
+    color: var(--advice-dice-color);
+    font-size: 15px;
+    letter-spacing: 5px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    text-transform: uppercase;
+}
+
+.container .advice {
+    color: var(--text-color);
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 20px;
+}
+
+.container .image-separation {
+    width: 350px;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.container .button {
+    background-color:var(--advice-dice-color);
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 50%;
+    margin-left: 188px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.container .button:hover {
+    color: #53FFAB;
+    box-shadow: 0 5px 15px var(--advice-dice-color);
+}
